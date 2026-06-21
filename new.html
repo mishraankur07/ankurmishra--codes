@@ -98,31 +98,32 @@
         margin-left: 10px;
     }
     .black{
-            font-weight:bold;
-            font-size: large;
+        font-weight:bold;
+        font-size: px;
+        font-style: oblique;
     }
     .row-3{
-              display: grid;
+        display: grid;
         grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr;
         margin-top: 20px;
         padding: 20px;
     }
     .black{
-            font-weight:bold;
-            font-size: large;
-            margin-down: 20px;
+        font-size: 20px;
+        font-weight:bold;
+        margin-down: 20px;
     }
     .row-3 span {
         display: block;
         margin: 5px 0;
     }
-     aside {
+    aside {
         text-align: center;
          }
-     aside span {
+    aside span {
         display: inline-block;
       
-           display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
          margin-top: 1px;
@@ -135,16 +136,76 @@
     }
     .shortcut {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content:center;
         align-items: center;
         margin-top: 1px;
         padding: 10px;
-    }
     
-  
+    }
+    main{
+        height: 700px;
+        display:grid;
+        grid-template-columns: 4fr 4fr 4fr;
 
-</style>
+
+        }
+    
+        .men-fshion{
+            background-image:url("public/image/men fshion.jpg");   
+            background-size: cover;
+            opacity:0.9;
+            height: 100%;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .women-fashion{
+            background-image: url("public/image/women fashion.jpg");
+            background-size: cover;
+            height: 100%;
+            min-height: 400px;
+             opacity:0.9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .kids-fashion{
+            background-image:url("public/image/kid fashion.jpg");
+            background-size: cover;
+            height: 100%;
+            min-height: 400px;
+             opacity:0.9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .men-fshion:hover{
+            opacity: 1;
+        }
+        .women-fashion:hover{
+            opacity:1
+        }
+        .kids-fashion:hover{
+            opacity:1
+        }
+        .buy{
+            background-color: rgba(0,0,0,0.9);
+            padding: 8px;
+            width: 200px;
+            align-items: center;
+            justify-content:center;
+            flex-direction:row;
+            color: yellow;
+            justify-content: space-evenly;
+            font-weight: bolder;
+            font-size:45px;
+            text-shadow: 2px 4px 8px green;
+            
+         
+        } 
+  </style>
 <body bgcolor="white" text="blue">
 <header>
     <div>
@@ -161,7 +222,7 @@
         </nav>
     </div>
  <div>
-       <span class="bi bi-house"></span>
+    <span class="bi bi-house"></span>
     <span class="bi bi-person"></span>
     <span class="bi bi-heart"></span>
     <span class="bi bi-cart"></span>
@@ -169,12 +230,28 @@
 </header>
 <section>
     <article>
-        <span class="bi bi-lightning-fill"></span>
-        <span>Holiday deals on everything</span>
-        <span class="bi bi-lightning-fill"></span>
+        <span class="bi bi-lightning-fill"> </span>
+       <span> Holiday deals on everything</span>
+        <span class="bi bi-lightning-fill"> </span>
     </article>
+    <main class="fashion">
+        <div class="women-fashion">
+            <span class="buy"> shop now </span>
+            
+            
+
+        </div>
+        <div class="men-fshion">
+              <span class="buy"> shop now</span>
+            
+
+        </div>
+        <div  class="kids-fashion">
+              <span class="buy"> shop now</span>
+            
+        </div>
+    </main>
 </section>
-<br>
 <footer>
     <div class="row-1">
         <span class="footer-title"> <u>Want style ideas or treat</u> </span>
@@ -188,11 +265,11 @@
                 <span class="col-1">Shopper</span><br>
                 <nav class="shortcut">
                     
-                <span class="bi bi-facebook"></span>
-                <span class="bi bi-twitter-x"></span>
-                <span class="bi bi-instagram"></span>
-                <span class="bi bi-twitter"></span>
-                <span class="bi bi-snapchat"></span>
+                <span class="bi bi-facebook"> facebook</span>
+                <span class="bi bi-twitter-x"> X-twitter</span>
+                <span class="bi bi-instagram"> Instagram</span>
+                <span class="bi bi-twitter"> &nbsp;Twitter</span>
+                <span class="bi bi-snapchat"> Snapchat</span>
                 </nav>
             </aside>
             <div>
